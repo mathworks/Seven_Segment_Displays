@@ -2,7 +2,7 @@
 % Script: TestSevenSegmentDisplays
 % Goal  : Run an instance of a group of a 7-segment displays component using the
 %         App Designer
-% Copyright 2020 The MathWorks, Inc.
+% Copyright 2022 The MathWorks, Inc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Clean session
 clear variables; close all force; clc;

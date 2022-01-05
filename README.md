@@ -37,7 +37,7 @@ The aim of this example is to show how to create a custom graphical component in
 
 ### **Requires**
 
-- [MATLAB R2020a](https://www.mathworks.com/products/matlab.html)
+- [MATLAB R2021b](https://www.mathworks.com/products/matlab.html)
 
-Copyright 2020 - 2020 The MathWorks, Inc.
+Copyright 2022 - 2022 The MathWorks, Inc.
 
