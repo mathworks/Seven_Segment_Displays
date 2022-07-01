@@ -8,11 +8,12 @@
 clear variables; close all force; clc;
 
 % Constants
-NB_DISPLAYS      = 3;
+NB_DISPLAYS      = 4;
 UINT8_MAX        = 255;
 BACKGROUND_COLOR = [127 127 0]/UINT8_MAX; % RGB
 SEGMENTS_COLOR   = [131 131 0]/UINT8_MAX; % RGB
-SEGMENTS_VALUES  = [0b10000110; 0b01011011; 0b01001111]; % 1 2 3
+SEGMENTS_VALUES  = [0b10000110; 0b01011011; 0b01001111; 0b01100110]; % 1 2 3 4
+% SEGMENTS_VALUES  = [0b01011110; 0b01011100; 0b01111100; 0b01011000]; % a b c d
 
 % Instanciate one 7-Segment displays component
 app = SevenSegmentDisplaysApp();

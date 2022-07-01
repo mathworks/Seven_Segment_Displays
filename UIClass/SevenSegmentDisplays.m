@@ -42,6 +42,7 @@ classdef SevenSegmentDisplays
         % Desired number of 7-segment displays are created to fullfil the space
         axHandler = uiaxes(obj.Container,'LooseInset',zeros(1,4),...
                            'xtick',[],'ytick',[],'Interactions',[]);
+        axis(axHandler,'off');
         axHandler.Toolbar.Visible = 'off';
         axis(axHandler,'tight');
         % Enable all 7 segments plus the decimal point by default
@@ -86,6 +87,14 @@ classdef SevenSegmentDisplays
           segments = [1 2 3 4 5 6 7];
         case 0b01101111 % uint8(9)
           segments = [1 2 3 4 6 7];
+        case 0b01011110 % a.
+          segments = [3 4 5 7 8];
+        case 0b01011100 % b.
+          segments = [3 4 5 6 7 8];
+        case 0b01111100 % c.
+          segments = [4 5 7 8];
+        case 0b01011000 % d.
+          segments = [2 3 4 5 7 8];
         case 0b01000000 % uint8(-)
           segments = 7;
         otherwise
